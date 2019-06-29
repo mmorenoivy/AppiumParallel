@@ -24,8 +24,9 @@ namespace AppiumParallel
         public void LaunchURL(String deviceName)
         {
             Setup(deviceName);
+            string url = ""; //any valid URL you have in mind..
             var navigation = driver.Navigate();
-            navigation.GoToUrl("https://mobilecompass-dev.azurewebsites.net/");
+            navigation.GoToUrl("https://" + url + "/");
 
         }
 
